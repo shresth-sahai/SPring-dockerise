@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name:springboot-app
+spec:
+  template:
+    spec:
+      containers:
+        - image:  shresth0400700/springboot-app:latest
+          ports:
+            - containerPort:8080
+
